@@ -1,6 +1,6 @@
 package com.labs;
 
-import com.labs.Laur.SpyBot;
+import com.labs.Lawrence.TrafficLights;
 
 import java.io.IOException;
 
@@ -8,6 +8,6 @@ public class Task5
 {
     public static void main(String[] args) throws IOException, InterruptedException
     {
-        SpyBot.main(args);
+        TrafficLights.main(args);
     }
 }
