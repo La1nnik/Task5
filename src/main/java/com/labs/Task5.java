@@ -1,6 +1,9 @@
-package com.labs;
+package src.main.java.com.labs;
 
-import com.labs.spybot.SpyBot;
+import com.labs.Laur.SpyBot;
+
+import java.io.IOException;
+
 import java.util.InputMismatchException;
 import java.util.Scanner;
 
@@ -102,9 +105,10 @@ public class Task5{
                 //code to start game 5
                 break;
             case 6:
-            System.out.println("Starting Draw Shape (Task 6)...");
+                //code to start game 6
+                 System.out.println("Starting Draw Shape (Task 6)...");
             try {
-                Assignment3.main(new String[]{});  
+                Assignment3.main(new String[]{}); 
             } catch (Exception e) {
                 System.out.println("Error running Task 6: " + e.getMessage());
             }
