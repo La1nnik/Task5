@@ -1,9 +1,6 @@
-package src.main.java.com.labs;
+package com.labs;
 
-import com.labs.Laur.SpyBot;
-
-import java.io.IOException;
-
+import com.labs.spybot.SpyBot;
 import java.util.InputMismatchException;
 import java.util.Scanner;
 
