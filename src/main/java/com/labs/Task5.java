@@ -105,14 +105,12 @@ public class Task5{
                 //code to start game 5
                 break;
             case 6:
-                case 6:
             System.out.println("Starting Draw Shape (Task 6)...");
             try {
                 Assignment3.main(new String[]{});  
             } catch (Exception e) {
                 System.out.println("Error running Task 6: " + e.getMessage());
             }
-            break;
                 break;
             case 7:
                 //code to start game 7
