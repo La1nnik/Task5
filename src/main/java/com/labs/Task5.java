@@ -1,8 +1,19 @@
 package com.labs;
 
 import com.labs.Laur.SpyBot;
+<<<<<<< Hosna
+<<<<<<< Updated upstream
+
+=======
+import com.labs.Ferdous.Assignment3;
+import com.labs.Hosna.NoughtsAndCrosses;
 import src.main.java.com.labs.Daniel.GameController;
 import com.labs.Ruben.SB_SearchForLight;
+>>>>>>> Stashed changes
+=======
+import src.main.java.com.labs.Daniel.GameController;
+import com.labs.Ruben.SB_SearchForLight;
+>>>>>>> main
 import java.io.IOException;
 
 import java.util.InputMismatchException;
@@ -11,6 +22,12 @@ import java.util.Scanner;
 public class Task5{
     public static void main(String[] args) throws InterruptedException, IOException
     {
+<<<<<<< Hosna
+<<<<<<< Updated upstream
+        SpyBot.main(args);
+=======
+=======
+>>>>>>> main
         printWelcomeMessage();
         printChooseMessage();
         printSelectMenu();
@@ -118,7 +135,11 @@ public class Task5{
             }
                 break;
             case 7:
+<<<<<<< Hosna
+                NoughtsAndCrosses.main(args);
+=======
                 //code to start game 7
+>>>>>>> main
                 break;
             case 8:
                 SB_SearchForLight.SearchForLight();
@@ -131,6 +152,10 @@ public class Task5{
                 break;
 
         }
+<<<<<<< Hosna
+>>>>>>> Stashed changes
+=======
+>>>>>>> main
     }
 }
 
