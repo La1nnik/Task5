@@ -1,17 +1,13 @@
 package com.labs;
 
+import com.labs.Lawrence.TrafficLights;
 import com.labs.Laur.SpyBot;
 import com.labs.Ferdous.Assignment3;
 import com.labs.Hosna.NoughtsAndCrosses;
 import src.main.java.com.labs.Daniel.GameController;
 import com.labs.Ruben.SB_SearchForLight;
 
-
-import src.main.java.com.labs.Daniel.GameController;
-import com.labs.Ruben.SB_SearchForLight;
-
 import java.io.IOException;
-
 import java.util.InputMismatchException;
 import java.util.Scanner;
 
@@ -29,9 +25,8 @@ public class Task5{
     static int choice;
 
     public static void printWelcomeMessage() {
-        String violet = "\u001B[35m";  // ANSI purple (violet)
+        String violet = "\u001B[35m";
         String reset = "\u001B[0m";
-
         System.out.println(violet +
                 " _       __________    __________  __  _________\n" +
                 "| |     / / ____/ /   / ____/ __ \\/  |/  / ____/\n" +
@@ -39,14 +34,11 @@ public class Task5{
                 "| |/ |/ / /___/ /___/ /___/ /_/ / /  / / /___   \n" +
                 "|__/|__/_____/_____/\\____/\\____/_/  /_/_____/   \n" +
                 reset);
-
-        //used https://patorjk.com/software/taag
-        //Slant font
     }
-    public static void printChooseMessage() {
-        String cyan = "\u001B[36m";  // bright cyan
-        String reset = "\u001B[0m";
 
+    public static void printChooseMessage() {
+        String cyan = "\u001B[36m";
+        String reset = "\u001B[0m";
         System.out.println(cyan +
                 "   ________                             __  __                                        \n" +
                 "  / ____/ /_  ____  ____  ________     / /_/ /_  ___     ____ _____ _____ ___  ___  _ \n" +
@@ -58,9 +50,8 @@ public class Task5{
     }
 
     public static void printSelectMenu() {
-        String yellow = "\u001B[33m"; // yellow
+        String yellow = "\u001B[33m";
         String reset = "\u001B[0m";
-
         System.out.println(yellow +
                 "=========================================\n" +
                 "               GAME MENU                 \n" +
@@ -80,6 +71,7 @@ public class Task5{
                 "=========================================\n"
                 + reset);
     }
+
     public static boolean validate(){
         try{
             choice = sc.nextInt();
@@ -109,18 +101,18 @@ public class Task5{
                 //code to start game 3
                 break;
             case 4:
-                //code to start game 4
+                TrafficLights.main(args);
                 break;
             case 5:
                 SpyBot.main(args);
                 break;
             case 6:
-                 System.out.println("Starting Draw Shape (Task 6)...");
-            try {
-                Assignment3.main(new String[]{}); 
-            } catch (Exception e) {
-                System.out.println("Error running Task 6: " + e.getMessage());
-            }
+                System.out.println("Starting Draw Shape (Task 6)...");
+                try {
+                    Assignment3.main(new String[]{});
+                } catch (Exception e) {
+                    System.out.println("Error running Task 6: " + e.getMessage());
+                }
                 break;
             case 7:
                 NoughtsAndCrosses.main(args);
@@ -134,12 +126,6 @@ public class Task5{
             case 10:
                 //code to start game 10
                 break;
-
         }
-
     }
 }
-
-
-
-
