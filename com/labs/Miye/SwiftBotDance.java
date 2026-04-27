@@ -1,3 +1,5 @@
+package com.labs.Miye;
+
 import swiftbot.*;
 import java.util.Scanner;
 import java.util.ArrayList;
